@@ -99,9 +99,14 @@ h1{
     color: hsl(228, 12%, 48%);
     
 }
+.mobileTitle{
+    display: none;
+}
 
 @media(max-width: 600px){
-
+    .title{
+        display: none;
+    }
     .card{
         min-height: 95vh;
         min-width: 90%;
@@ -112,18 +117,24 @@ h1{
         display: none;
     }
     .right{
-        border: 1px solid red;
-        height: 70%;
+        /* border: 1px solid red; */
+        height: 40%;
         width: 100%;
     }
     .left{
-        border: 1px solid black;
-        height: 100%;
-        width: 90%
+        height: 65%;
+        /* border: 1px solid black; */
+        width: 88%;
+    }
+    .mobileTitle{
+        display: block;
     }
     .mobileImg{
         display: block;
         height: 100%;
         width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
     }
 }
